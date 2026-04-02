@@ -24,10 +24,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: arm64
-        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/arm64-v8a/libclient.so
+        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/arm64-v8a/.
 
     - name: 'Upload arm32 Artifact'
       uses: actions/upload-artifact@v4
       with:
         name: arm32
-        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/arm64-v8a/libclient.so
+        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/armeabi-v7a/.
