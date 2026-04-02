@@ -1241,7 +1241,7 @@ void CTFBot::AvoidPlayers( CUserCmd *pCmd )
 
 	m_Shared.SetSeparation( true );
 
-	const float maxSpeed = 50.0f;
+	const float maxSpeed = 320.0f;
 	m_Shared.SetSeparationVelocity( avoidVector * maxSpeed );
 
 	float ahead = maxSpeed * DotProduct( forward, avoidVector );
