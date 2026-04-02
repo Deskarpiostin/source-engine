@@ -20,14 +20,27 @@ jobs:
         chmod +x scripts/build-android-aarch64.sh
         scripts/build-android-aarch64.sh   
 
-    - name: 'Upload arm64 Artifact'
+    - name: 'Upload arm64 server Artifact'
       uses: actions/upload-artifact@v4
       with:
-        name: arm64
-        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/arm64-v8a/.
+        name: arm64-server
+        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/arm64-v8a/libserver.so
 
-    - name: 'Upload arm32 Artifact'
+    - name: 'Upload arm32 server Artifact'
       uses: actions/upload-artifact@v4
       with:
-        name: arm32
-        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/armeabi-v7a/.
+        name: arm32-server
+        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/armeabi-v7a/libserver.so
+
+    - name: 'Upload arm64 client Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+        name: arm64-server
+        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/arm64-v8a/libclient.so
+
+    - name: 'Upload arm32 client Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+        name: arm32-server
+        path: /home/runner/work/source-engine/source-engine/srceng-mod-launcher/android/lib/armeabi-v7a/libclient.so
+
