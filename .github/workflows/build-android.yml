@@ -12,7 +12,7 @@ jobs:
       run: |
         git clone https://github.com/ItzVladik/srceng-mod-launcher
         sudo apt-get update
-        sudo apt-get install -f -y openjdk-8-jre zip apksigner imagemagick zlib1g libc6 libstdc++6 libopenal-dev g++-multilib gcc-multilib libpng-dev libjpeg-dev libfreetype6-dev libfontconfig1-dev libcurl4-gnutls-dev libsdl2-dev zlib1g-dev libbz2-dev libedit-dev
+        sudo apt-get install -f -y openjdk-8-jre zip apksigner libz imagemagick zlib1g libc6 libstdc++6 libopenal-dev g++-multilib gcc-multilib libpng-dev libjpeg-dev libfreetype6-dev libfontconfig1-dev libcurl4-gnutls-dev libsdl2-dev zlib1g-dev libbz2-dev libedit-dev
     - name: Build Android (32 bit)
       run: |
         scripts/build-android-armv7a.sh
