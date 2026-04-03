@@ -67,7 +67,7 @@ float CTFBotLocomotion::GetDeathDropHeight( void ) const
 float CTFBotLocomotion::GetRunSpeed( void ) const
 {
 	CTFBot *me = (CTFBot *)GetBot()->GetEntity();
-	return 320
+	return 320;
 }
 
 
